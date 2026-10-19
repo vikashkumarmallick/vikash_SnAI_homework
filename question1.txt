@@ -1,0 +1,28 @@
+Question Title: Advanced File Management
+
+Question Link:
+https://my.newtonschool.co/playground/code/4ks5o139cfoh?lecture_hash=v210chxjexei
+
+Solution:
+
+mkdir project-files
+cd project-files
+touch report.docx summary.docx draft.docx
+cp report.docx report_backup.docx
+mkdir old
+mv draft.docx old
+mv summary.docx final_summary.docx
+cp final_summary.docx old
+rm report_backup.docx
+
+Approach:
+
+1. Used pwd to check the current directory (/box).
+2. Created project-files using 'mkdir'.
+3. Created three specified files using 'touch'.
+4. Copied report.docx to report_backup.txt using 'cp'.
+5. Created the old directory inside 'project-files' using 'mkdir'.
+6. Moved 'draft.docx' into 'old' using 'mv.
+7. Renamed 'summary.docx' to 'final_summary.docx' using 'mv'.
+8. Copied 'final_summary.docx' into 'old' using 'cp'.
+9. Removed 'report_backup.txt' using 'rm'.
