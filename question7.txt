@@ -1,0 +1,19 @@
+Question Title: The Missing Project Credentials
+
+Question Link:
+https://my.newtonschool.co/playground/code/7x83ezx6nimm
+
+Solution:
+
+grep -r "DB_PASSWORD" .
+pwd
+cat EventApp/config/.env > EventApp/db_password.txt
+
+Approach:
+
+1. Use grep -r "DB_PASSWORD" . to search recursively for the text DB_PASSWORD in files and directories under the current directory.
+2. Use pwd to display the current working directory.
+3. Use cat EventApp/config/.env > EventApp/db_password.txt to copy the contents of the .env file
+   into db_password.txt, creating or overwriting the destination file.
+
+
