@@ -1,0 +1,25 @@
+Question Title: The Internship Project Setup.
+
+Question Link:
+https://my.newtonschool.co/playground/code/5i36axzh7cl2?lecture_hash=mi7y4g3am46y
+
+Solution:
+
+cd client-app
+git init
+echo "hii" >> index.html
+echo "hello" >> app.js
+git add index.html app.js
+git commit -m "Initial client files"
+git remote add origin https://github.com/startup/client-app.git
+git push -u origin main
+git log
+
+Approach:
+
+1. First i navigate into client-app by using cd command.
+2. Then Initialize Git by git init.
+3. Then add some contents to index.html and app.js then stage them and use git commit to save them with a commit message.
+4. Then Use git remote add origin to connect the local repository to the GitHub remote repository.
+5. Then use git push -u origin main to push the main branch to GitHub.
+6. Then use git log to view the commits.
