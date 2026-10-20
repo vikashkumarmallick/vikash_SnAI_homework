@@ -1,0 +1,18 @@
+Question Title: Simplify the Compilation Process.
+
+Question Link:
+https://my.newtonschool.co/playground/code/9kh4giios2j4?lecture_hash=t5qc0u6ap8tg
+
+Solution:
+
+echo "gcc hello.c -o hello" >> build.sh
+chmod 777 build.sh
+./build.sh
+./hello
+
+Approach:
+
+1. I Use echo with >> to append the GCC compilation command to the build.sh file.
+2. I Use chmod 777 build.sh to give execution permission.
+3. Then Execute ./build.sh to compile hello.c into an executable named hello.
+4. Then run ./hello to execute the compiled program and display its output.
