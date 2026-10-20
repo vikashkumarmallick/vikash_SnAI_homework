@@ -1,0 +1,20 @@
+Question Title: Deployment Project Permissions.
+
+Question Link:
+https://my.newtonschool.co/playground/code/3wz3wv7c89fo?lecture_hash=vifkrugjcwth
+
+Solution:
+
+chmod 700 /box/deployment/app/*.py
+chmod 770 /box/deployment/datasets
+chmod 770 /box/deployment/datasets/*.csv
+chmod 644 /box/deployment/docs/OVERVIEW.md
+chmod 755 /box/deployment/bin/*.sh
+
+Approach:
+
+1. I Use chmod 700 to give the owner full permissions on all Python files in the app directory.
+2. I Use chmod 770 to give the owner and group full permissions on the datasets directory.
+3. I Use chmod 770 to give the owner and group full permissions on all CSV files in the datasets directory.
+4. I Use chmod 644 to give the owner read/write permissions and others read-only permission on OVERVIEW.md.
+5. I Use chmod 755 to give the owner full permissions and others read/execute permissions on all shell scripts in the bin directory.
