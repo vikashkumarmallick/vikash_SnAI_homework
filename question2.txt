@@ -1,0 +1,27 @@
+Question Title: Create a Project Folder Structure.
+
+Question Link:
+https://my.newtonschool.co/playground/code/jipp2htnvrww?lecture_hash=v210chxjexei
+
+Solution:
+
+echo "mkdir -p service/controllers" >> create-service
+echo "mkdir -p service/models" >> create-service
+echo "mkdir -p service/routes" >> create-service
+echo "mkdir -p service/middleware" >> create-service
+echo "echo 'API Service' > service/README.md" >> create-service
+printf "echo 'console.log(" >> create-service
+printf '"Server started");' >> create-service
+echo "'> service/server.js" >> create-service
+cat create-service
+chmod 777 create-service
+create-service
+
+Approach:
+
+1. First, I checked my current working directory and content inside it using the pwd and ls command. The output showed that I was currently in the /box directory and nothing at all.
+2. Use echo with >> to append commands for creating the controllers, models, routes, and middleware directories inside the service directory.
+3. Add commands to create the README.md file containing API Service and the server.js file containing console.log("Server started");.
+4. Use the cat command to verify the contents of the create-service file.
+5. Use the chmod +x command to provide execution permission to the script.
+6. Execute the script using ./create-service .
